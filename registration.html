@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    </head>
+    <body>
+        <header class="header">
+            <nav class="topnavbar">
+                <a href="index1.php.html">
+                    <div class="logo">
+                        <img src="logonav.png" alt="Logo">
+                    </div>
+                </a>
+                <input type="checkbox" id="menu-toggles" />
+                <label for="menu-toggles" id="hamburger-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24"
+                        viewBox="0 0 24 24" width="24">
+                        <path d="M3 12h18M3 6h18M3 18h18" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" />
+                    </svg>
+                </label>
+
+                <ul class="linkes">
+
+                    <li><a href="index1.php.html">Home</a></li>
+                    <li><a href="course.html">Courses</a></li>
+                    <li><a href="#">Updates</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+
+                    <div class="buttonsignupin">
+                        <!-- <a href="#" class="signin">Sign In</a> -->
+                        <a href="login.html" class="signup">Admin Login</a>
+                    </div>
+                </ul>
+            </nav>
+        </header>
+        <div class="clearfix">
+        </div>
+        <!-- ---header end--- -->
+
+        <!-- registration form start--- -->
+        <div class="regsections">
+
+            <h3 align="center" style="color:#333">Apply Now for Admission</h3>
+            <div class="coursesection">
+                <div class="courses">
+                    <div class="alerts">
+                        <div class="section-title section-title-2">
+                            <h6>Apply Now : </h6>
+                        </div>
+                        <div class="comment-form">
+                            <form
+                                action="https://www.vsmb.com/contactUs.php"
+                                method="POST" name="form1"
+                                id="form1">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-input"><i
+                                                class="fa fa-user"></i>
+                                            <input name="name"
+                                                id="name"
+                                                type="text"
+                                                placeholder="Your Name"
+                                                required=required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-input"><i
+                                                class="fa fa-user"></i>
+                                            <input name="fname"
+                                                id="name"
+                                                type="text"
+                                                placeholder="Father Name"
+                                                required=required>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <div class="form-input"><i
+                                                class="fa fa-phone"></i>
+                                            <input type="text"
+                                                id="tel"
+                                                name="tel"
+                                                placeholder="Phone Number"
+                                                oninput="this.value = this.value.replace(/[^0-9.+-]/g, '');"
+                                                min="9"
+                                                maxlength="11"
+                                                required=required/>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-input"><i
+                                                class="fa fa-envelope"></i>
+                                            <input name="e_mail"
+                                                id="e_mail"
+                                                type="email"
+                                                placeholder="Email"
+                                                required=required
+                                                pattern="([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,6})" />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-input">
+                                            <i class="fa fa-calendar"></i>
+                                            <input name="dob"
+                                                id="dob"
+                                                type="dob"
+                                                placeholder="Date of Birth"
+                                                required=required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-input"><i
+                                                class="fa fa-address-card"></i>
+                                            <input name="state"
+                                                id="state"
+                                                type="text"
+                                                placeholder="State"
+                                                required=required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-input">
+                                            <i class="fa fa-address-card"></i>
+                                            <input name="District"
+                                                id="District"
+                                                type="text"
+                                                placeholder="District"
+                                                required=required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-input">
+                                            <i class="fa fa-address-card-o"></i>
+                                            <input name="Block"
+                                                id="Block"
+                                                type="text"
+                                                placeholder="Block"
+                                                required=required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-input">
+                                            <i class="fa fa-address-card"></i>
+                                            <input name="Village"
+                                                id="Village"
+                                                type="text"
+                                                placeholder="Village"
+                                                required=required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-input">
+                                            <i class="fa fa-codepen"></i>
+                                            <input name="Pincode"
+                                                id="Pincode"
+                                                type="text"
+                                                placeholder="Pincode"
+                                                required=required />
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <lebel>Select Course</lebel>
+                                        <select class="form-input" name="course"
+                                            id="course"
+                                            required=required>
+                                            <option value>Select Course</option>
+                                            <option
+                                                value="TYPING">TYPING COURSE</option>
+                                            <option value="DCA">DCA (DIPLOMA
+                                                IN COMPUTER APPLICATION)</option>
+                                            <option value="SPOKEN">ENGLISH
+                                                SPOKEN</option>
+                                            <option value="ADCA">ADCA(ADVANCE
+                                                DIPLOMA IN COMPUTER APPLICATION)</option>
+
+                                            <option value="C">C PROGRAMMING</option>
+                                            <option value="C++">C++ PROGRAMMING</option>
+                                            <option value="BEAUTY">BEAUTICIAN
+                                                COURSE</option>
+                                            <!-- <option value="DTP">DTP</option> -->
+                                            <!-- <option value="TALLY">TALLY</option> -->
+                                            <!-- <option value="JAVA">JAVA</option> -->
+                                            <!-- <option value="PHP">PHP</option> -->
+                                            <!-- <option value="PYTHON">PYTHON</option> -->
+                                            <!-- <option value="WEB DESIGNING">WEB
+                                                DESIGNING</option> -->
+                                            <!-- <option value="GRAPHIC DESIGNING">GRAPHIC
+                                                DESIGNING</option> -->
+
+                                            <!-- <option
+                                                value="DIPLOMA IN COMPUTER PROGRAMMING">DIPLOMA
+                                                IN COMPUTER PROGRAMMING</option> -->
+                                            <!-- <option
+                                                value="DIPLOMA IN COMPUTER APPLICATION & PROGRAMMING">DIPLOMA
+                                                IN COMPUTER APPLICATION &
+                                                PROGRAMMING</option> -->
+                                        </select>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-input">
+                                            <i class="fa fa-photo"></i>
+                                            <input name="photo"
+                                                id="photo"
+                                                type="file"
+                                                placeholder="Photo"
+                                                required=required />
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-12">
+                                        <div class="form-input"> <i
+                                                class="fa fa-comment"></i>
+                                            <textarea
+                                                name="mess_age"
+                                                id="mess_age"
+                                                placeholder="Message"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <button type="submit"
+                                            class="button-3"
+                                            onClick="return check_empty();"
+                                            name="btnSendFeedback"
+                                            id="btnSendFeedback">
+                                            Submit</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- registration form start---- -->
+        <!-- footer start -->
+
+        <div class="sections sections-padding-b-20 kk_bg4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-widget">
+                            <div class="widget-title kk_colr">
+                                <h6>About Us</h6>
+                            </div>
+                            <div class="widget-about">
+                                <p>Vivek Skill Mission Bihar (VSMB) is a
+                                    computer education
+                                    center dedicated to empowering
+                                    individuals with valuable
+                                    skills and knowledge in the field of
+                                    computer technology.
+                                    Our mission is to provide high-quality
+                                    computer education
+                                    and training to people of all
+                                    backgrounds, enabling them to
+                                    thrive in an increasingly digital world.
+                                    ......</p>
+                                <div class="social-ul">
+                                    <ul>
+                                        <li class="social-facebook"><a
+                                                href="https://www.facebook.com/AICCE-190817071728268/"
+                                                target="_blank"><i
+                                                    class="fa fa-facebook"></i></a></li>
+                                        <li class="social-twitter"><a
+                                                href="https://twitter.com/AICCE_KOTA"
+                                                target="_blank"><i
+                                                    class="fa fa-twitter"></i></a></li>
+                                        <li class="social-google"><a
+                                                href="index.php.html#"><i
+                                                    class="fa fa-google-plus"></i></a></li>
+                                        <li class="social-pinterest"><a
+                                                href="index.php.html#"><i
+                                                    class="fa fa-pinterest"></i></a></li>
+                                        <li class="social-vimeo"><a
+                                                href="index.php.html#"><i
+                                                    class="fa fa-vimeo-square"></i></a></li>
+                                        <li class="social-linkedin"><a
+                                                href="index.php.html#"><i
+                                                    class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-widget">
+                            <div class="widget-title kk_colr">
+                                <h6>Get In Touch</h6>
+                            </div>
+                            <div class="widget-about-2">
+                                <ul>
+                                    <li> <i class="fa fa-map-marker"></i>
+                                        <div class="s_kk_q"
+                                            style="color:#959595"> <strong>"Near by H.N.S.B JANTA College Dhansoi"</strong><br>
+                                            Main road Dhansoi Buxar , Bihar
+                                            INDIA - 802117
+                                        </div>
+                                    </li>
+                                    <li> <i class="fa fa-phone"></i>
+                                        <div class="s_kk_q"
+                                            style="color:#959595"><a
+                                                href="tel:+919199255101">+91
+                                                - 91992 - 55101</a>, <a
+                                                href="tel:+919939755101">+91
+                                                - 99397 -
+                                                55101</a></div>
+
+                                    </li>
+                                    <!-- <li> <i class="fa fa-envelope"></i>
+                                    <div class="s_kk_q"><a
+                                            href="cdn-cgi/l/email-protection.html#a2c6cbd0c7c1d6cdd0e2c3cbc1c1c78cc1cd8ccbcc"><span
+                                                class="__cf_email__"
+                                                data-cfemail="15717c677076617a6755747c7676703b767a3b7c7b">[email&#160;protected]</span></a></div>
+                                </li> -->
+                                    <li> <i class="fa fa-envelope"></i>
+                                        <div class="s_kk_q"
+                                            style="color:#959595"><a
+                                                href="ajaybx5@gmail.com">ajaybx5@gmail.com</a>
+                                        </div>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="footer-widget">
+                            <div class="widget-title kk_colr">
+                                <h6>Footer Link</h6>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="widget-posts">
+                                        <div class="s_kk_q"
+                                            style="font-size:13px; line-height:25px"><i
+                                                style="padding-right:20px;"
+                                                class="fa fa-angle-double-right"></i><a
+                                                href="index1.php.html">Home</a></div>
+                                        <div class="s_kk_q"
+                                            style="font-size:13px; line-height:25px"><i
+                                                style="padding-right:20px;"
+                                                class="fa fa-angle-double-right"></i><a
+                                                href="about-us.html">About
+                                                Us</a></div>
+                                        <div class="s_kk_q"
+                                            style="font-size:13px; line-height:25px"><i
+                                                style="padding-right:20px;"
+                                                class="fa fa-angle-double-right"></i><a
+                                                href="d_mssage.html">Director's
+                                                Message </a></div>
+                                        <div class="s_kk_q"
+                                            style="font-size:13px; line-height:25px"><i
+                                                style="padding-right:20px;"
+                                                class="fa fa-angle-double-right"></i><a
+                                                href="linkages.html">Linkages
+                                            </a></div>
+                                        <div class="s_kk_q"
+                                            style="font-size:13px; line-height:25px"><i
+                                                style="padding-right:20px;"
+                                                class="fa fa-angle-double-right"></i><a
+                                                href="courses.html">Courses
+                                            </a></div>
+                                        <div class="s_kk_q"
+                                            style="font-size:13px; line-height:25px"><i
+                                                style="padding-right:20px;"
+                                                class="fa fa-angle-double-right"></i><a
+                                                href="privacy-statement.html">Privacy
+                                                Statement</a></div>
+                                        <div class="s_kk_q"
+                                            style="font-size:13px; line-height:25px"><i
+                                                style="padding-right:20px;"
+                                                class="fa fa-angle-double-right"></i><a
+                                                href="refund-policy.html">Refund
+                                                Policy </a></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="widget-posts">
+                                        <div class="s_kk_q"
+                                            style="font-size:13px; line-height:25px"><i
+                                                style="padding-right:20px;"
+                                                class="fa fa-angle-double-right"></i><a
+                                                href="register.html">Registration</a></div>
+                                        <div class="s_kk_q"
+                                            style="font-size:13px; line-height:25px"><i
+                                                style="padding-right:20px;"
+                                                class="fa fa-angle-double-right"></i><a
+                                                href="centers.html">Centers</a></div>
+                                        <div class="s_kk_q"
+                                            style="font-size:13px; line-height:25px"><i
+                                                style="padding-right:20px;"
+                                                class="fa fa-angle-double-right"></i><a
+                                                href="franchisee.html">Franchisee
+                                            </a></div>
+                                        <div class="s_kk_q"
+                                            style="font-size:13px; line-height:25px"><i
+                                                style="padding-right:20px;"
+                                                class="fa fa-angle-double-right"></i><a
+                                                href="downloads.html">Downloads
+                                            </a></div>
+                                        <div class="s_kk_q"
+                                            style="font-size:13px; line-height:25px"><i
+                                                style="padding-right:20px;"
+                                                class="fa fa-angle-double-right"></i><a
+                                                href="contact-us.html">Contact
+                                                Us</a></div>
+                                        <div class="s_kk_q"
+                                            style="font-size:13px; line-height:25px"><i
+                                                style="padding-right:20px;"
+                                                class="fa fa-angle-double-right"></i><a
+                                                href="terms-service.html">Terms
+                                                of Service</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer id="footer-bottom">
+            <div class="container">
+                <div class="copyrights">Copyright © 2018. All rights
+                    reserved by
+                    : <a target="_blank"
+                        href="#"
+                        title="VSMB">VSMB</a></div>
+            </div>
+
+        </footer>
+    </body>
+</html>
